@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Create a Friend</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron" style="text-align: center">
+          <h1>I-Gotch</h1>
+    </div>
+    <div class="container">
+      <div class="jumbotron" style="text-align: center">
+        <div class="row">
+          @using Tamagotchi.Models;
+
+
+            @foreach (Pet pets in Model)
+            {
+          <ul>
+            <a href="/pets/@pets.Name" style="color: orange; font-size: 250%;">@pets.Name</a>
+              <li>Hungerness: @pets.Food</li>
+              <li>Happiness: @pets.Happiness</li>
+              <li>Tiredness: @pets.Sleep</li>
+          </ul>
+            }
+        </div>
+        <a href="/pets/new" style="color: orange;">Create a new pet</a>
+      </div>
+    </div>
+</body>
+
+</html>

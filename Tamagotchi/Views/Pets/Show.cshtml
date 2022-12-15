@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Create a Friend</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron" style="text-align: center">
+          <h1>I-Gotch</h1>
+    </div>
+    <div class="container">
+      <div class="jumbotron" style="text-align: center">
+            <p style="font-size: 250%;">@Model.Name</p>
+            <p>Hungerness: @Model.Food</p>
+            <p>Happiness: @Model.Happiness</p>
+            <p>Tiredness: @Model.Sleep</p>
+      </div>
+      <a href="/pets/@Model.Name" place="feed" style="color: orange; margin-left: 20%;">Feed</a>
+      <a href="/pets/@Model.Name" place="play" style="color: orange; margin-left: 25%;">Play</a>
+      <a href="/pets/@Model.Name" place="sleep" style="color: orange; margin-left: 25%;">Sleep</a>
+    </div>
+</body>
+
+</html>
